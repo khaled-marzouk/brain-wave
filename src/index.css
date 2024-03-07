@@ -86,3 +86,23 @@
 .-rotate-360 {
 	@apply rotate-[-360deg];
 }
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spin {
+	animation: spin 5s linear infinite;
+}
+
+.animate-spin {
+	animation: spin 7s linear infinite; /* Adjust the duration (5s) as needed */
+}
+.not-animated {
+	animation: none !important;
+}
